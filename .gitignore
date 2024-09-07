@@ -1,0 +1,56 @@
+# Node modules
+node_modules/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE/editor folders
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# Build output
+dist/
+build/
+
+# Coverage reports
+coverage/
+
+# Miscellaneous
+*.tgz
+*.gz
+*.lock
+
+# NPM package lock
+package-lock.json
+yarn.lock
+
+# Docker files
+Dockerfile
+docker-compose.yml
+
+# Configuration files
+*.config.js
+*.log
+
+# Dependency directories
+jspm_packages/
+
+# AWS configuration files
+.aws/
