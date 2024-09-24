@@ -21,10 +21,3 @@ applications:
     environments:
       - development
       - production
-  - name: my-backend-api
-    category: backend
-    source: ./backend
-    environments:
-      - development
-      - production
-appRoot: ./src
