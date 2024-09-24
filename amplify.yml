@@ -14,3 +14,11 @@ frontend:
   cache:
     paths:
       - node_modules/**/*
+applications:
+  frontend:
+    targets:
+      - source: ./src
+        category: frontend
+        environments:
+          - development
+          - production
