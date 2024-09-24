@@ -15,10 +15,15 @@ frontend:
     paths:
       - node_modules/**/*
 applications:
-  frontend:
-    targets:
-      - source: ./src
-        category: frontend
-        environments:
-          - development
-          - production
+  - name: my-frontend-app
+    category: frontend
+    source: ./src
+    environments:
+      - development
+      - production
+  - name: my-backend-api
+    category: backend
+    source: ./backend
+    environments:
+      - development
+      - production
