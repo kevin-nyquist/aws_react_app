@@ -27,3 +27,4 @@ applications:
     environments:
       - development
       - production
+appRoot: ./src
