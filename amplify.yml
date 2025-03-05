@@ -1,39 +1,25 @@
 version: 1
-frontend:
-  phases:
-    preBuild:
-      commands:
-        - npm install
-    build:
-      commands:
-        - npm run build
-  artifacts:
-    baseDirectory: build
-    files:
-      - '**/*'
-  cache:
-    paths:
-      - node_modules/**/*
 applications:
-  - appRoot: ./aws_react_app
+  - appRoot: ./aws_react_app  # Directory of your Vite-based React app in the monorepo
     name: my-frontend-app
     category: frontend
-    source: ./src
+    source: ./src  # Path to the source code within the app
     frontend:
       phases:
         preBuild:
           commands:
-            - npm install
+            - npm install   # Install dependencies
         build:
           commands:
-            - npm run build
+            - npm run build  # Build the app using Vite
       artifacts:
-        baseDirectory: build
+        baseDirectory: ./aws_react_app/build  # Vite outputs the build artifacts here
         files:
-          - '**/*'
+          - '**/*'  # Include all files from the build folder
       cache:
         paths:
-          - node_modules/**/*
+          - node_modules/**/*  # Cache node_modules to speed up subsequent builds
+
     environments:
       - development
       - production
