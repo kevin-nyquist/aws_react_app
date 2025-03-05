@@ -19,6 +19,10 @@ applications:
     name: my-frontend-app
     category: frontend
     source: ./src
+    build:
+      commands:
+        - npm install  # Install dependencies
+        - npm run build  # Build the app
     environments:
       - development
       - production
