@@ -15,8 +15,8 @@ frontend:
     paths:
       - node_modules/**/*
 applications:
-  - appRoot: /Users/kevinnyquist/Documents/GitHub/aws_react_app
-  - name: my-frontend-app
+  - appRoot: ./aws_react_app
+    name: my-frontend-app
     category: frontend
     source: ./src
     environments:
